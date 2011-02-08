@@ -22,6 +22,6 @@ Drop the files in a "Seld" directory in your sublime packages dir, which should 
 
 If you do a git clone, that would be (in the Packages dir) :
 
-    git clone http://github.com/seldaek/sublime-plugins.git Seld
+    git clone http://github.com/Seldaek/sublime-plugins.git Seld
 
 The name of the directory is important for the JSLint plugin, the rest should work no matter where it is.
