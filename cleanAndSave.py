@@ -1,7 +1,10 @@
 import sublime, sublimeplugin
 
 ##
-# Duplicates current line if there's nothing selected. Else duplicates content
+# Strips the trailing whitespace of every line and then saves the file
+# 
+# Use this as a replacement for the save command
+#
 # Bind it via (example):
 #  <binding key="ctrl+shift+s" command="stripAndSave"/>
 ##
