@@ -6,7 +6,7 @@ import os
 #
 # Specify the directory holding all your project files as an argument to the command.
 # Bind it via (examples):
-#  <binding key="ctrl+shift+p" command="quickOpenProject 'C:/Users/seld/Web/projects'" />
+#    { "keys": ["ctrl+shift+alt+p"], "command": "quick_open_project", "args": {"dir": "/foo/bar/sublime-projects"} },
 #
 # @author Jordi Boggiano <j.boggiano@seld.be>
 ##
