@@ -1,0 +1,4 @@
+[
+    {"command": "expand_selection", "args": {"to": "line"}},
+    {"command": "left_delete"}
+]

@@ -1,27 +1,23 @@
 What is this?
 -------------
 
-These files are Sublime Text plugins
+These files are Sublime Text 2 plugins, macros and others
 
-<a href="http://www.sublimetext.com/">Sublime Text</a> is an awesome text editor for Windows, and should be available on OSX and Linux <a href="http://www.sublimetext.com/x">at some point</a>.
+<a href="http://www.sublimetext.com/">Sublime Text</a> is a great cross-platform text editor.
 
 See the header in every .py file for detailed explanations about what they do and usage information.
 
 Included are:
 
 - quickOpenProject: Opens a quick panel with your list of sublime project files
-- duplicateLine: Duplicates the current line or selected text
-- jsLint: Checks the syntax of js files on save
-- phpLint: Checks the syntax of php files on save
-- cleanAndSave: Cleans the trailing whitespaces and saves the file (deprecated)
+- deleteLine: Delete the current line, or all selected lines
+- openFolder: Opens the folder holding the current file in explorer
 
 Installation
 ------------
 
-Drop the files in a "Seld" directory in your sublime packages dir, which should be located at: C:\Users\*YOUR_USER*\AppData\Roaming\Sublime Text\Packages
+Drop the files in a package directory of your choice in your sublime packages directory.
 
 If you do a git clone, that would be (in the Packages dir) :
 
     git clone http://github.com/Seldaek/sublime-plugins.git Seld
-
-The name of the directory is important for the JSLint plugin, the rest should work no matter where it is.

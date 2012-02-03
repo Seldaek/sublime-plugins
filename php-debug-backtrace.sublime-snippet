@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[print_r(array_map(function(\$a){ unset(\$a['args'], \$a['object']); return \$a; }, debug_backtrace()));]]></content>
+    <tabTrigger>bt</tabTrigger>
+    <scope>source.php - variable.other.php</scope>
+    <description>debug_backtrace (filtered)</description>
+</snippet>

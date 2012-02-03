@@ -1,4 +1,5 @@
-import sublime, sublimeplugin, os
+import sublime_plugin
+import os
 
 ##
 # Open project from a quickPanel
@@ -10,21 +11,26 @@ import sublime, sublimeplugin, os
 # @author Jordi Boggiano <j.boggiano@seld.be>
 ##
 
-class quickOpenProject(sublimeplugin.WindowCommand):
-    allowedExtensions = ['.sublime-project']
 
-    def wantFile(self, f):
+class QuickOpenProjectCommand(sublime_plugin.WindowCommand):
+    projects = []
+
+    def want_file(self, f):
         root, ext = os.path.splitext(f)
-        return os.path.isfile(f) and ext in self.allowedExtensions
+        return os.path.isfile(f) and ext == '.sublime-project'
 
-    def run(self, window, args):
-        projectsPath = str(args[0])
-        displayFiles = [f for f in os.listdir(projectsPath) if self.wantFile(projectsPath+'/'+f)]
+    def open_project(self, index):
+        if index == -1:
+            return
+        # TODO fix this call
+        self.window.run_command('open_project', [self.projects[index]])
+
+    def run(self, dir):
+        projectsPath = str(dir)
+        displayFiles = [f for f in os.listdir(projectsPath) if self.want_file(projectsPath + '/' + f)]
         displayFiles.sort()
-        projectFilesPath = [projectsPath+'/'+str(f) for f in displayFiles]
+        self.projects = [projectsPath + '/' + str(f) for f in displayFiles]
         for i in range(len(displayFiles)):
-            for ext in self.allowedExtensions:
-                displayFiles[i] = displayFiles[i].replace(ext, '')
+            displayFiles[i] = displayFiles[i].replace('.sublime-project', '')
 
-        window.showQuickPanel("", "openProject", projectFilesPath, displayFiles,
-            sublime.QUICK_PANEL_FILES | sublime.QUICK_PANEL_MULTI_SELECT)
+        self.window.show_quick_panel(displayFiles, self.open_project)
