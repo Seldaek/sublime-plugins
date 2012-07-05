@@ -10,7 +10,6 @@ See the header in every .py file for detailed explanations about what they do an
 Included are:
 
 - quickOpenProject: Opens a quick panel with your list of sublime project files
-- deleteLine: Delete the current line, or all selected lines
 - openFolder: Opens the folder holding the current file in explorer
 
 Installation
