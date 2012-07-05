@@ -1,0 +1,5 @@
+[
+    {"command": "expand_selection", "args": {"to": "line"}},
+    {"command": "duplicate_line" },
+    {"command": "move", "args": {"by": "lines", "forward": false}}
+]

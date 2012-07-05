@@ -10,6 +10,7 @@ See the header in every .py file for detailed explanations about what they do an
 Included are:
 
 - quickOpenProject: Opens a quick panel with your list of sublime project files
+- duplicateLineExpand: Duplicates the current line(s) under it. If there is a selection it copies the whole line unlike the native sublime duplicate_line command.
 - openFolder: Opens the folder holding the current file in explorer
 
 Installation
