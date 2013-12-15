@@ -1,7 +1,7 @@
 What is this?
 -------------
 
-These files are Sublime Text 2 plugins, macros and others
+These files are Sublime Text 2/3 plugins, macros and others
 
 <a href="http://www.sublimetext.com/">Sublime Text</a> is a great cross-platform text editor.
 
@@ -9,7 +9,7 @@ See the header in every .py file for detailed explanations about what they do an
 
 Included are:
 
-- quickOpenProject: Opens a quick panel with your list of sublime project files
+- quickOpenProject: Opens a quick panel with your list of sublime project files (broken in ST2/3)
 - duplicateLineExpand: Duplicates the current line(s) under it. If there is a selection it copies the whole line unlike the native sublime duplicate_line command.
 - openFolder: Opens the folder holding the current file in explorer
 
@@ -18,6 +18,6 @@ Installation
 
 Drop the files in a package directory of your choice in your sublime packages directory.
 
-If you do a git clone, that would be (in the Packages dir) :
+If you do a git clone, that would be (in the Packages dir):
 
     git clone http://github.com/Seldaek/sublime-plugins.git Seld

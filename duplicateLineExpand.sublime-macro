@@ -1,3 +1,7 @@
+// Assuming this is in a Seld package, this is how you bind it:
+//
+//    { "keys": ["ctrl+alt+shift+down"], "command": "run_macro_file", "args": {"file": "res://Packages/Seld/DuplicateLineExpand.sublime-macro"} },
+//
 [
     {"command": "expand_selection", "args": {"to": "line"}},
     {"command": "duplicate_line" },

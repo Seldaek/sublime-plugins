@@ -22,7 +22,7 @@ class QuickOpenProjectCommand(sublime_plugin.WindowCommand):
     def open_project(self, index):
         if index == -1:
             return
-        # TODO fix this call
+        # TODO fix this call, ST2/3 do not support it
         self.window.run_command('open_project', [self.projects[index]])
 
     def run(self, dir):
